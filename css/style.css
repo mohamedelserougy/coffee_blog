@@ -1,0 +1,173 @@
+/* start variabel */
+
+:root{
+    --dark_blue : hsl(233, 26%, 24%);
+    --lime_green: hsl(136, 65%, 51%);
+    --bright_cyan:hsl(192, 70%, 51%);
+}
+
+/* end variabel */
+
+
+
+/* start global rules */
+*{
+    font-family: "Public Sans", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+button{
+       background: linear-gradient(to right, var(--lime_green), var(--bright_cyan));
+       transition: all 0.5s !important;
+
+    }
+button:hover{
+        opacity: 0.7;
+    }
+
+
+/* end global rules */
+
+
+/* start nav */
+   
+
+   nav .nav-link::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.5s;
+    
+      }
+
+     nav .nav-link.active::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(to right, var(--lime_green), var(--bright_cyan));
+                            
+    }
+    
+/* end nav */
+
+/* start home */
+
+     #home{
+        background-image: url(../images/bg-intro-desktop.svg);
+        background-position:right;
+        background-size:contain;
+        background-repeat: no-repeat;
+        
+    }
+    
+/* end home */
+
+/* start about */
+
+#about .items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#about .items .card{
+        width: 23%;
+        transition: all 0.5s;
+        
+        background-color: transparent;
+        
+    }
+   #about .items .card:hover{
+        transform: scale(1.1);
+        box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+        background-color:white ;
+    }
+/* end about */
+
+/* start career */
+    
+#career .items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#career .items .card{
+        width: 23%;
+        transition: all 0.5s;
+        background-color: #e9e8e8;
+        
+    }
+   #career .items .card:hover{
+        transform: scale(1.1);
+        box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+        background-color:white ;
+    }
+    #career .card h5{
+        transition: all 0.5s;
+    }
+    #career .card h5:hover{
+        color: var(--lime_green);
+    }
+
+/* end career */
+
+
+/* start contact */
+    .contact .icon{
+        width: 3.75rem;
+        height:  3.75rem;
+        background-color: #f4f4f4;
+        transition: all 0.5s;
+    }
+
+    .contact .inner:hover .icon{
+       color: white;
+       background-color: var(--dark_blue);
+
+    }
+     
+    .contact form input{
+        background-color: #dadada !important;
+    }
+    .contact form textarea{
+        background-color: #dadada !important;
+        height: 10rem;
+        max-height: 10rem;
+    }
+    .form-control{
+        border: none;
+    }
+    .form-control:focus {
+        outline: none;
+        box-shadow: none
+    }
+    
+/* end contact */
+
+/* start footer */
+footer{
+    background-color: var(--dark_blue);
+}
+
+
+footer li,
+footer i,
+footer a{
+    transition: all 0.5s;
+}
+footer li:hover,
+footer i:hover,
+footer a:hover{
+    color: var(--lime_green) !important;
+}
+
+
+/* end footer */
+
+

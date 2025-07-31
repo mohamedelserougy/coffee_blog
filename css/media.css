@@ -1,0 +1,150 @@
+@media (max-width:767px) {
+  
+      #career .items .card,
+      #about .items .card{
+        margin: auto;
+        width: 90%;
+       margin-bottom: 1.875rem;
+      }
+      #about .items .card{
+        text-align: center;
+      }
+      #about .inner p{
+        width: 100% !important;
+      }
+      #career  h2,
+      #about .inner
+      {
+        text-align: center !important;
+      }
+
+      #home{
+        background-image: url(../images/bg-intro-mobile.svg);
+        background-position: center;
+        background-size: cover;
+        background-color: black;
+       
+      }
+      #home .bg_image{
+        text-align: center;
+      }
+      #home .bg_image img{
+        width: 100%
+      }
+
+      #home .inner *{
+        width: 100% !important;
+        color: white;
+      }
+       #home .inner{
+        text-align: center;
+       position: absolute;
+       bottom: -30%;
+       
+       } 
+
+
+
+       footer .inner{
+        flex-direction: column !important;
+       }
+       footer .inner .left{
+        flex-direction: column !important;
+        width: 90% !important;
+        margin: auto;
+       }
+       
+       footer .inner .left_side{
+        width: 100% !important;
+        
+       }
+       footer .inner .right_side{
+        width: 100% !important;
+       }
+       footer .inner .right_side ul{
+        margin-top: 20px;
+        flex-direction: column !important;
+        text-align: center;
+        align-items: center;
+       }
+       footer .inner .right_side ul li{
+        margin-top: 5px;
+        
+       }
+       footer .inner .right{
+        width: 100% !important;
+        text-align: center;
+       }
+
+
+       
+
+
+    }
+
+@media (min-width:768px) and (max-width:991px) {
+     #career .items .card,
+     #about .items .card{
+        margin: auto;
+        width: 48%;
+       margin-bottom: 1.875rem;
+      }
+      #about .items .card{
+        text-align: center;
+      }
+
+      #about .inner p{
+        width: 100% !important;
+      }
+
+      #career  h2,
+      #about .inner
+      {
+        text-align: center !important;
+      }
+        #home{
+        background-image: url(../images/bg-intro-mobile.svg);
+        background-position: center;
+        background-size: cover;
+        padding-bottom: 300px !important;
+         background-color: black;
+       
+      }
+     
+      #home .bg_image img{
+        width: 80%;
+        
+      }
+
+      #home .inner *{
+        width: 100% !important;
+        color: white;
+        text-align: center;
+      }
+       #home .inner .text_section{
+        /* text-align: center; */
+        position: relative !important;
+        top: 460px !important;
+       
+       } 
+
+       footer .inner{
+        flex-direction: column;
+       }
+       footer .inner .left{
+        width: 100% !important;
+       }
+       footer .inner .right{
+        width: 100% !important;
+        margin-top: 20px;
+        text-align: center;
+       }
+      
+}
+
+@media (min-width:992px) {
+    nav .nav-link.active::after{
+        left: 20%;
+        width: 80%;                       
+    }
+}
